@@ -19,4 +19,7 @@ class Person(AbstractUser):
     cin = models.IntegerField(primary_key=True,validators=[verifLength])
     email = models.EmailField(unique=True)
 
+    def __str__(self):
+        return " email : " + self.email + " cin : " + str(self.cin) + " username : " + self.username
+
     
