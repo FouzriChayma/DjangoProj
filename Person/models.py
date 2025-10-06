@@ -22,4 +22,5 @@ class Person(AbstractUser):
     def __str__(self):
         return " email : " + self.email + " cin : " + str(self.cin) + " username : " + self.username
 
-    
+    class Meta:
+        verbose_name_plural = "Person"
